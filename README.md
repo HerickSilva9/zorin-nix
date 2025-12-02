@@ -11,6 +11,7 @@ Possivelmente essa seja uma boa opção, necessário testar
 ```
 curl -L https://nixos.org/nix/install -o /tmp/install-nix.sh
 sudo bash /tmp/install-nix.sh --daemon --yes
+source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh  # Ativa nix no mesmo shell de instalação
 ```
 
 ### Ativar Home-Manager
@@ -22,6 +23,7 @@ Primeiro é necessário ativar os experimental commands do arquivo de configura�
 
 Reiniciar daemon do nix após ativar experimental commands
 ```
+sudo cp nix.conf /etc/nix/
 sudo systemctl restart nix-daemon.service
 ```
 

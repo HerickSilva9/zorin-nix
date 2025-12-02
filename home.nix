@@ -7,7 +7,7 @@
   home.homeDirectory = "/home/herick";
 
   home.packages = with pkgs; [
-    bat git vim kitty 
+ 
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
