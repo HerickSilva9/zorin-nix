@@ -2,6 +2,8 @@
 
 {
   imports = [
+    ./browser
     ./development
+    ./virtualisation/podman
   ];
 }
